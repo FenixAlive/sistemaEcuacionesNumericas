@@ -19,7 +19,7 @@ function s = jacobi(A, B, x0, it)
       errabs = norm(x - x0); %norm hace la diferencia del modulo de vectores, si quieres que evalue contra valor real cambiar x0 por exac
       sol = [sol; [k x' errabs]]; % ' es transpuesta
       x0 = x;
-      k++;
+      k=k+1;
     end
   else
     for k = 1:it

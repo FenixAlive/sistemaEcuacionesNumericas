@@ -3,6 +3,7 @@ function s = gaussJordan(A, B)
 % forma Ax = B
 % A = matriz cuadrada
 % B = igualdad
+% te da la solución exacta
 l = length(A)
 Aum = [A,B]
 %hacer un for
