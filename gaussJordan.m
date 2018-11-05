@@ -1,4 +1,7 @@
-function s = gaussJordan(A, B)
+function s = gaussJordan()
+A = [-14 0 3 5 4; 2 35 -2 1 -2; 2 -1 7 -3 4; -3 1 2 -21 -2; -3 -2 4 -2 35];
+B = [3 70 5 -43 28]'
+format rat
 % función s = gaussJordan(A, B)
 % forma Ax = B
 % A = matriz cuadrada
@@ -7,7 +10,7 @@ function s = gaussJordan(A, B)
 l = length(A)
 Aum = [A,B]
 %hacer un for
-for i=1:l
+for i=1:3
   E = eye(l);
   %hacer pivote
   Ae = -Aum(:,i)/Aum(i,i);

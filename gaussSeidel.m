@@ -1,4 +1,11 @@
-    function s = gaussSeidel(A, B, x0, it)
+    
+function s = gaussSeidel()
+clear
+    A = [-14 0 3 5 4; 2 35 -2 1 -2; 2 -1 7 -3 4; -3 1 2 -21 -2; -3 -2 4 -2 35];
+    %B = [-9 32 22 -26 68]'
+    B = [3 70 5 -43 28]'
+    x0 = [0 0 0 0 0]'
+    it = .00001
   % Función que busca de manera iterativa la matriz solucion x
   % Buscar que A este en matriz dominante
   % s = gaussSeidel(A, B, x0, it)
